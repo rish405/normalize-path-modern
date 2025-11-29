@@ -40,5 +40,13 @@
     "posix",
     "unc",
     "tiny"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rish405/normalize-path-modern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rish405/normalize-path-modern/issues"
+  },
+  "homepage": "https://github.com/rish405/normalize-path-modern#readme"
 }
