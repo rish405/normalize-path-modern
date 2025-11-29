@@ -1,0 +1,44 @@
+{
+  "name": "normalize-path-modern",
+  "version": "0.1.0",
+  "description": "Modern, tiny path normalizer for POSIX and Windows",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "npm run build && node --test",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "path",
+    "normalize",
+    "windows",
+    "posix",
+    "unc",
+    "tiny"
+  ]
+}
